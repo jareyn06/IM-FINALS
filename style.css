@@ -1,0 +1,25 @@
+
+*{box-sizing:border-box}
+body{margin:0;font-family:"Segoe UI",Arial,sans-serif;background:#fff7e6;color:#402b1a}
+.container{width:94%;max-width:1180px;margin:28px auto}
+.header-area{background:linear-gradient(135deg,#f97316,#facc15);color:white;padding:28px;border-radius:24px;box-shadow:0 12px 30px rgba(249,115,22,.18)}
+.header-area h1{margin:0;font-size:32px}.subtitle{margin:6px 0 0;color:#fff9db}
+.note{margin-top:18px;background:white;border-left:6px solid #f97316;padding:14px;border-radius:12px}
+.box{background:white;margin-top:20px;padding:22px;border-radius:18px;box-shadow:0 8px 24px rgba(86,54,20,.08)}
+.box h2{margin-top:0;color:#c2410c}
+.form-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}
+.form-grid div{min-width:0}
+label{display:block;margin-bottom:6px;font-weight:700;color:#7c4a1f}
+input,select{width:100%;padding:11px;border:1px solid #fdba74;border-radius:12px;background:#fffdf8}
+.btn{display:inline-block;margin-top:15px;padding:10px 17px;border:0;border-radius:999px;background:#ea580c;color:white;cursor:pointer;text-decoration:none;font-weight:700}
+.cancel{display:inline-block;margin-left:6px;padding:9px 15px;border-radius:999px;background:#fef3c7;color:#92400e;text-decoration:none}
+.message{margin-top:16px;padding:12px;border-radius:12px;background:#dcfce7;color:#166534}
+.table-header{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.search{display:flex;gap:6px;align-items:center}.search input{width:230px}.search .btn{margin-top:0}
+.table-container{overflow-x:auto}table{width:100%;border-collapse:collapse}
+th{background:#c2410c;color:white;padding:11px}td{padding:11px;border-bottom:1px solid #fed7aa}
+tr:nth-child(even) td{background:#fffaf2}
+.actions{display:flex;gap:6px}.actions form{margin:0}
+.edit,.delete{padding:6px 10px;border:0;border-radius:10px;text-decoration:none;cursor:pointer}
+.edit{background:#fef3c7;color:#92400e}.delete{background:#fee2e2;color:#b91c1c}
+@media(max-width:700px){.form-grid{grid-template-columns:1fr}.table-header{flex-direction:column;align-items:stretch}.search{flex-wrap:wrap}.search input{width:100%}}
